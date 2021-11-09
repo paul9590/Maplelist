@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    android:gravity="center_horizontal"
+    tools:context=".SymbolActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:text="심볼 계산기"
+        android:textColor="@color/pink"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:text="현재 심볼을 입력해 주세요." />
+
+
+    <TableLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width= "wrap_content"
+                android:layout_height= "wrap_content"
+                android:gravity="center"
+                android:layout_marginRight="50dp"
+                android:text="" />
+
+            <TextView
+                android:layout_width= "wrap_content"
+                android:layout_height= "wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="레벨" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width= "wrap_content"
+                android:layout_height= "wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="갯수" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TbSym1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width= "wrap_content"
+                android:layout_height= "wrap_content"
+                android:gravity="center"
+                android:layout_marginRight="50dp"
+                android:text="여로 심볼 : " />
+
+            <EditText
+                android:id="@+id/EditSym1"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:ems="2"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="0"/>
+
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/EditSym1Info"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="0"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TbSym2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width= "wrap_content"
+                android:layout_height= "wrap_content"
+                android:gravity="center"
+                android:layout_marginRight="50dp"
+                android:text="츄츄 심볼 : " />
+
+            <EditText
+                android:id="@+id/EditSym2"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:ems="2"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="0"/>
+
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/EditSym2Info"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="0"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TbSym3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width= "wrap_content"
+                android:layout_height= "wrap_content"
+                android:gravity="center"
+                android:layout_marginRight="50dp"
+                android:text="레헬른 심볼 : " />
+
+            <EditText
+                android:id="@+id/EditSym3"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:ems="2"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="0"/>
+
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/EditSym3Info"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="0"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TbSym4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width= "wrap_content"
+                android:layout_height= "wrap_content"
+                android:gravity="center"
+                android:layout_marginRight="50dp"
+                android:text="아르카나 심볼 : " />
+
+            <EditText
+                android:id="@+id/EditSym4"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:ems="2"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="0"/>
+
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/EditSym4Info"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="0"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TbSym5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width= "wrap_content"
+                android:layout_height= "wrap_content"
+                android:gravity="center"
+                android:layout_marginRight="50dp"
+                android:text="모라스 심볼 : " />
+
+            <EditText
+                android:id="@+id/EditSym5"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:ems="2"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="0"/>
+
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/EditSym5Info"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="0"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TbSym6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width= "wrap_content"
+                android:layout_height= "wrap_content"
+                android:gravity="center"
+                android:layout_marginRight="50dp"
+                android:text="에스페라 심볼 : " />
+
+            <EditText
+                android:id="@+id/EditSym6"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:ems="2"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="0"/>
+
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/EditSym6Info"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="0"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TbSym7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width= "wrap_content"
+                android:layout_height= "wrap_content"
+                android:gravity="center"
+                android:layout_marginRight="50dp"
+                android:text="세르니움 심볼 : " />
+
+            <EditText
+                android:id="@+id/EditSym7"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:ems="2"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="0"/>
+
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/EditSym7Info"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="0"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TbSym8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width= "wrap_content"
+                android:layout_height= "wrap_content"
+                android:gravity="center"
+                android:layout_marginRight="50dp"
+                android:text="아르크스 심볼 : " />
+
+            <EditText
+                android:id="@+id/EditSym8"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:ems="2"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="0"/>
+
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/EditSym8Info"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="0"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/BtnSymRes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="계산하기" />
+
+</LinearLayout>

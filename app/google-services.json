@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "333136114059",
+    "project_id": "maplelist-5540e",
+    "storage_bucket": "maplelist-5540e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:333136114059:android:8e2a7ba79fbbbb4dd2bf8e",
+        "android_client_info": {
+          "package_name": "com.ping.maplelist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "333136114059-k34fdkip25c2djts4mj8l4gl0qrntqgi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ping.maplelist",
+            "certificate_hash": "40d5fb52d76d66029e5dd7a9007bedcafa40a1a6"
+          }
+        },
+        {
+          "client_id": "333136114059-ui9sdvg5gb9oi7fi8kc5meaboi71rskb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4g5XSKprQ3-64Uj164ufN9UsjFMb20Iw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "333136114059-ui9sdvg5gb9oi7fi8kc5meaboi71rskb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

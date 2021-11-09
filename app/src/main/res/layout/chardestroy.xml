@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="380dp"
+    android:orientation="vertical"
+    android:background="@drawable/layoutshape"
+    android:layout_gravity="center"
+    android:padding="1dp">
+
+
+
+    <TextView
+        android:id="@+id/TxtCharChange"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="18dp"
+        android:textSize="15dp"
+        android:text="캐릭터 삭제하기" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/lineshape"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="1dp"
+        android:orientation="vertical"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="37dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/ImgDestroy1"
+                            android:layout_width="100dp"
+                            android:layout_height="80dp"
+                            android:scaleType="center"
+                            android:background="@drawable/layoutshape"/>
+
+
+                        <ImageView
+                            android:id="@+id/ImgDestroy2"
+                            android:layout_width="100dp"
+                            android:layout_height="80dp"
+                            android:layout_marginLeft="30dp"
+                            android:scaleType="center"
+
+                            android:background="@drawable/layoutshape"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/TxtDestroy1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text=""/>
+
+                        <TextView
+                            android:id="@+id/TxtDestroy2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:gravity="center"
+                            android:text=""/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/ImgDestroy3"
+                            android:layout_width="100dp"
+                            android:layout_height="80dp"
+                            android:scaleType="center"
+                            android:background="@drawable/layoutshape"/>
+
+
+                        <ImageView
+                            android:id="@+id/ImgDestroy4"
+                            android:layout_width="100dp"
+                            android:layout_height="80dp"
+                            android:layout_marginLeft="30dp"
+                            android:scaleType="center"
+
+                            android:background="@drawable/layoutshape"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/TxtDestroy3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text=""/>
+
+                        <TextView
+                            android:id="@+id/TxtDestroy4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:gravity="center"
+                            android:text=""/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/ImgDestroy5"
+                            android:layout_width="100dp"
+                            android:layout_height="80dp"
+                            android:scaleType="center"
+                            android:background="@drawable/layoutshape"/>
+
+
+                        <ImageView
+                            android:id="@+id/ImgDestroy6"
+                            android:layout_width="100dp"
+                            android:layout_height="80dp"
+                            android:layout_marginLeft="30dp"
+                            android:scaleType="center"
+
+                            android:background="@drawable/layoutshape"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/TxtDestroy5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text=""/>
+
+                        <TextView
+                            android:id="@+id/TxtDestroy6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:gravity="center"
+                            android:text=""/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/ImgDestroy7"
+                            android:layout_width="100dp"
+                            android:layout_height="80dp"
+                            android:scaleType="center"
+                            android:background="@drawable/layoutshape"/>
+
+
+                        <ImageView
+                            android:id="@+id/ImgDestroy8"
+                            android:layout_width="100dp"
+                            android:layout_height="80dp"
+                            android:layout_marginLeft="30dp"
+                            android:scaleType="center"
+
+                            android:background="@drawable/layoutshape"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/TxtDestroy7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text=""/>
+
+                        <TextView
+                            android:id="@+id/TxtDestroy8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:gravity="center"
+                            android:text=""/>
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/BtnBac2"
+            android:layout_width="53dp"
+            android:layout_height="33dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="275dp"
+            android:layout_marginBottom="5dp"
+            android:text="닫기"
+            android:textSize="8dp" />
+
+    </FrameLayout>
+
+</LinearLayout>

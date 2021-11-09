@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="300dp"
+android:layout_height="100dp"
+android:orientation="vertical"
+android:background="@drawable/layoutshape"
+android:layout_gravity="center"
+android:padding="1dp">
+
+    <TextView
+        android:id="@+id/TxtAsk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="18dp"
+        android:textSize="15dp"
+        android:text="" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="right">
+
+        <Button
+            android:id="@+id/BtnYes"
+            android:layout_width="56dp"
+            android:layout_height="33dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="5dp"
+            android:text="예"
+            android:textSize="8dp" />
+
+        <Button
+            android:id="@+id/BtnNo"
+            android:layout_width="56dp"
+            android:layout_height="33dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:text="아니요"
+            android:textSize="8dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

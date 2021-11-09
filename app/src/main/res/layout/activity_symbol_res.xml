@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/bg"
+    tools:context=".ExpResultActivity">
+
+    <ScrollView
+        android:layout_width="300dp"
+        android:layout_height="600dp"
+        android:background="@drawable/layoutshape">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/TxtSymRes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TableRow
+                    android:id="@+id/TbSymRes1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/ImgSym1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="소멸의 여로 심볼"
+                        android:layout_gravity="center"/>
+
+
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/TbSymTxt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="남은 날짜 : "
+                        />
+
+                    <TextView
+                        android:id="@+id/TxtSymDay1"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="0"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/TbSymMoney1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="필요한 가격 : "
+                        />
+
+                    <TextView
+                        android:id="@+id/TxtSymMoney1"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="0"/>
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/TbSymRes2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center">
+
+                    <ImageView
+
+                        android:id="@+id/ImgSym2"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="츄츄 아일랜드 심볼"
+                        android:layout_gravity="center"/>
+
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/TbSymTxt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="남은 날짜 : "
+                        />
+
+                    <TextView
+                        android:id="@+id/TxtSymDay2"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="0"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/TbSymMoney2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="필요한 가격 : "
+                        />
+
+                    <TextView
+                        android:id="@+id/TxtSymMoney2"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="0"/>
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/TbSymRes3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/ImgSym3"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="레헬른 심볼"
+                        android:layout_gravity="center"/>
+
+
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/TbSymTxt3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="남은 날짜 : "
+                        />
+
+                    <TextView
+                        android:id="@+id/TxtSymDay3"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="0"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/TbSymMoney3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="필요한 가격 : "
+                        />
+
+                    <TextView
+                        android:id="@+id/TxtSymMoney3"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="0"/>
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/TbSymRes4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/ImgSym4"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="아르카나 심볼"
+                        android:layout_gravity="center"/>
+
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/TbSymTxt4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="남은 날짜 : "
+                        />
+
+                    <TextView
+                        android:id="@+id/TxtSymDay4"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="0"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/TbSymMoney4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="필요한 가격 : "
+                        />
+
+                    <TextView
+                        android:id="@+id/TxtSymMoney4"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="0"/>
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/TbSymRes5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/ImgSym5"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="모라스 심볼"
+                        android:layout_gravity="center"/>
+
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/TbSymTxt5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="남은 날짜 : "
+                        />
+
+                    <TextView
+                        android:id="@+id/TxtSymDay5"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="0"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/TbSymMoney5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="필요한 가격 : "
+                        />
+
+                    <TextView
+                        android:id="@+id/TxtSymMoney5"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="0"/>
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/TbSymRes6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/ImgSym6"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="에스페라 심볼"
+                        android:layout_gravity="center"/>
+
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/TbSymTxt6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="남은 날짜 : "
+                        />
+
+                    <TextView
+                        android:id="@+id/TxtSymDay6"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="0"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/TbSymMoney6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="필요한 가격 : "
+                        />
+
+                    <TextView
+                        android:id="@+id/TxtSymMoney6"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="0"/>
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/TbSymRes7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/ImgSym7"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="세르니움 어센틱 심볼"
+                        android:layout_gravity="center"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/TbSymTxt7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="남은 날짜 : "
+                        />
+
+                    <TextView
+                        android:id="@+id/TxtSymDay7"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="0"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/TbSymMoney7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="필요한 가격 : "
+                        />
+
+                    <TextView
+                        android:id="@+id/TxtSymMoney7"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="0"/>
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/TbSymRes8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/ImgSym8"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="호텔 아르크스 어센틱 심볼"
+                        android:layout_gravity="center"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/TbSymTxt8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="남은 날짜 : "
+                        />
+
+                    <TextView
+                        android:id="@+id/TxtSymDay8"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="0"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/TbSymMoney8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="필요한 가격 : "
+                        />
+
+                    <TextView
+                        android:id="@+id/TxtSymMoney8"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="0"/>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    android:gravity="center_horizontal"
+    tools:context=".MvpActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:text="MVP 계산기"
+        android:textColor="@color/pink"
+        android:textSize="30dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="수수료 3%"
+            android:layout_marginRight="20dp"/>
+
+        <CheckBox
+            android:id="@+id/ChkMvp"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+        <Button
+            android:id="@+id/BtnMvpAdd"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="50dp"
+            android:text="추가" />
+
+        <Button
+            android:id="@+id/BtnMvpDel"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:text="삭제" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="메소 시세 : "
+            android:layout_marginRight="20dp"/>
+
+        <EditText
+            android:id="@+id/EditMesoPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="3"
+            android:inputType="number"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="0"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="350dp"
+        android:layout_height="400dp">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width= "wrap_content"
+                android:layout_height= "wrap_content"
+                android:gravity="center"
+                android:layout_marginRight="50dp"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="캐시 (원)" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width= "wrap_content"
+                android:layout_height= "wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="메소 (만 메소)" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TbMvp1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width= "wrap_content"
+                android:layout_height= "wrap_content"
+                android:gravity="center"
+                android:layout_marginRight="20dp"
+                android:text="1번 아이템 :  " />
+
+            <EditText
+                android:id="@+id/EditCash1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="4"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="0"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/EditMeso1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="4"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="0"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TbMvp2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width= "wrap_content"
+                android:layout_height= "wrap_content"
+                android:gravity="center"
+                android:layout_marginRight="20dp"
+                android:text="2번 아이템 :  " />
+
+            <EditText
+                android:id="@+id/EditCash2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="4"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="0"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/EditMeso2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="4"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="0"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TbMvp3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width= "wrap_content"
+                android:layout_height= "wrap_content"
+                android:gravity="center"
+                android:layout_marginRight="20dp"
+                android:text="3번 아이템 :  " />
+
+            <EditText
+                android:id="@+id/EditCash3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="4"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="0"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/EditMeso3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="4"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="0"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TbMvp4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width= "wrap_content"
+                android:layout_height= "wrap_content"
+                android:gravity="center"
+                android:layout_marginRight="20dp"
+                android:text="4번 아이템 :  " />
+
+            <EditText
+                android:id="@+id/EditCash4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="4"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="0"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/EditMeso4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="4"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="0"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TbMvp5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width= "wrap_content"
+                android:layout_height= "wrap_content"
+                android:gravity="center"
+                android:layout_marginRight="20dp"
+                android:text="5번 아이템 :  " />
+
+            <EditText
+                android:id="@+id/EditCash5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="4"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="0"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/EditMeso5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="4"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="0"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TbMvp6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width= "wrap_content"
+                android:layout_height= "wrap_content"
+                android:gravity="center"
+                android:layout_marginRight="20dp"
+                android:text="6번 아이템 :  " />
+
+            <EditText
+                android:id="@+id/EditCash6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="4"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="0"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/EditMeso6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="4"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="0"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TbMvp7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width= "wrap_content"
+                android:layout_height= "wrap_content"
+                android:gravity="center"
+                android:layout_marginRight="20dp"
+                android:text="7번 아이템 :  " />
+
+            <EditText
+                android:id="@+id/EditCash7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="4"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="0"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/EditMeso7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="4"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="0"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TbMvp8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width= "wrap_content"
+                android:layout_height= "wrap_content"
+                android:gravity="center"
+                android:layout_marginRight="20dp"
+                android:text="8번 아이템 :  " />
+
+            <EditText
+                android:id="@+id/EditCash8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="4"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="0"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/EditMeso8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="4"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="0"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TbMvp9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width= "wrap_content"
+                android:layout_height= "wrap_content"
+                android:gravity="center"
+                android:layout_marginRight="20dp"
+                android:text="9번 아이템 :  " />
+
+            <EditText
+                android:id="@+id/EditCash9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="4"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="0"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/EditMeso9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="4"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="0"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TbMvp10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width= "wrap_content"
+                android:layout_height= "wrap_content"
+                android:gravity="center"
+                android:layout_marginRight="20dp"
+                android:text="10번 아이템 :  " />
+
+            <EditText
+                android:id="@+id/EditCash10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="4"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="0"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/EditMeso10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="4"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="0"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/BtnMvpRes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="계산하기" />
+
+</LinearLayout>
